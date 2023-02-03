@@ -1,0 +1,119 @@
+/* making the body block to remove flex property from other sheet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: "Poppins";
+    color: #4b4a4a;
+}
+.logo{
+    color: #ffffff;
+    font-weight: 600;
+}
+body{
+    display: block;
+    overflow-y: scroll;
+    background-color: #d3c8c8;
+}
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #444747;
+    padding: 10px 20px;
+    /* color: #ffffff; */
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+    color: #ffffff;
+
+}
+nav .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+nav ul li a:hover{
+    color: #558fc5;
+    /* cursor: pointer; */
+}
+.search-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-field input{
+    padding: 5px 7px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+
+}
+.search-field input::placeholder{
+    font-size: 18px;
+}
+.search-field button{
+    padding: 5px 12px;
+    background-color: #3b9ada;
+    border-radius: 8px;
+    border: none;
+    margin-left: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    transition: .2s;
+
+}
+.search-field button:hover{
+    /* border: 1px solid black; */
+    color: black;
+    background-color: #ffffff;
+    font-size: 18px;
+
+
+}
+/* main wrapper for the accordian */
+.accordian-wrapper{
+    border: 5px solid white;
+    width: 70vw;
+    margin: 100px auto;
+}
+.accordian-wrapper > div{
+    margin-top: 20px;
+}
+.accordian{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #858282;
+    
+}
+
+.accordian h3{
+    padding: 5px 15px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordian p{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+}
