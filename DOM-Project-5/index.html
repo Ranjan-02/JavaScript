@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Recipes</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assats/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <div class="nav-center">
             <div class="nav-header">
                 <a href="index.html" class="nav-logo">
-                    <img src="./img/logo.svg" alt="Simply Recipes" />
+                    <img src="./Assats/logo.svg" alt="Simply Recipes" />
                 </a>
             </div>
             <div class="nav-links">
@@ -32,7 +32,7 @@
     <main class="page">
         <header class="hero">
             <div class="hero-container">
-                <img src="./img/main.jpeg" alt="Main Image">
+                <img src="./Assats/main.jpeg" alt="Main Image">
                 <div class="hero-text">
                     <h1>Simply Recipes</h1>
                     <h4>No Fluff, Just Recipes</h4>
@@ -54,35 +54,35 @@
             <div class="recipe-gallery">
                 <div class="card">
                     <a href="#" class="recipe-text">
-                        <img src="./img/recipe-1.jpeg" class="recipe-img" />
+                        <img src="./Assats/recipe-1.jpeg" class="recipe-img" />
                         <h5 class="recipe-name">Chicken</h5>
                         <p class="recipe-disp">Prep : 15min | Cook : 30min</p>
                     </a>
                 </div>
                 <div class="card">
                     <a href="#" class="recipe-text">
-                        <img src="./img/recipe-2.jpeg" class="recipe-img " />
+                        <img src="./Assats/recipe-2.jpeg" class="recipe-img " />
                         <h5 class="recipe-name">Paneer</h5>
                         <p class="recipe-disp">Prep : 15min | Cook : 25min</p>
                     </a>
                 </div>
                 <div class="card">
                     <a href="#" class="recipe-text">
-                        <img src="./img/recipe-3.jpeg" class="recipe-img " />
+                        <img src="./Assats/recipe-3.jpeg" class="recipe-img " />
                         <h5 class="recipe-name">Tomato Soup</h5>
                         <p class="recipe-disp">Prep : 15min | Cook : 5min</p>
                     </a>
                 </div>
                 <div class="card">
                     <a href="#" class="recipe-text">
-                        <img src="./img/recipe-4.jpeg" class="recipe-img " />
+                        <img src="./Assats/recipe-4.jpeg" class="recipe-img " />
                         <h5 class="recipe-name">Chocolate Cake</h5>
                         <p class="recipe-disp">Prep : 20min | Cook : 45min</p>
                     </a>
                 </div>
                 <div class="card">
                     <a href="#" class="recipe-text">
-                        <img src="./img/recipe-5.jpeg" class="recipe-img " />
+                        <img src="Assats/recipe-5.jpeg" class="recipe-img " />
                         <h5 class="recipe-name">Hakka Noodles</h5>
                         <p class="recipe-disp">Prep : 15min | Cook : 30min</p>
                     </a>
@@ -99,12 +99,14 @@
         </p>
     </footer>
     <script>
-        const ab = document.querySelector(".nav-links")
-        let x = document.createElement("a")
-        ab.classList.add("btn")
-        x.textContent = "Recipes 2"
-        'Recipes 2'
-        ab.append(x)
+       let button = document.querySelector('.nav-center').children[2];
+       console.log(button);
+let a = document.createElement('a');
+console.log(button);
+a.innerText = 'Pro Subscription';
+a.className = 'btn';
+button.appendChild(a);
+
 
     </script>
 </body>

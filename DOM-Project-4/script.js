@@ -30,16 +30,20 @@ fivethtItam.style.color = "#ffffff";
 
 
 
-let numberColor1 = document.querySelectorAll('.no-border')[0];
-numberColor1.style.color = "#ffffff";
-let numberColor2 = document.querySelectorAll('.no-border')[1];
-numberColor2.style.color = "#ffffff";
-let numberColor3 = document.querySelectorAll('.no-border')[2];
-numberColor3.style.color = "#ffffff";
-let numberColor4 = document.querySelectorAll('.no-border')[3];
-numberColor4.style.color = "#ffffff";
-let numberColor5 = document.querySelectorAll('.no-border')[4];
-numberColor5.style.color = "#ffffff";
+let numberColor = document.querySelectorAll('.no-border');
+for (i = 0; i < numberColor.length; i++) {
+        numberColor[i].style.color = "#ffffff";
+
+}
+
+// let numberColor2 = document.querySelectorAll('.no-border')[1];
+// numberColor2.style.color = "#ffffff";
+// let numberColor3 = document.querySelectorAll('.no-border')[2];
+// numberColor3.style.color = "#ffffff";
+// let numberColor4 = document.querySelectorAll('.no-border')[3];
+// numberColor4.style.color = "#ffffff";
+// let numberColor5 = document.querySelectorAll('.no-border')[4];
+// numberColor5.style.color = "#ffffff";
 
 
 
