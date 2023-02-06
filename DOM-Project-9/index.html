@@ -34,18 +34,30 @@
       </div>
     </div>
     <script>
-      let addCart = document.getElementById('cart');
-     let title = document.getElementById('title');
+    //   let addCart = document.getElementById('cart');
+    //  let title = document.getElementById('title');
       // console.log(addCart);
       // let cardRed = addCart.style.backgroundColor ="red" ;
       // console.log(cardRed);
-      function myfunction(){
-        title.style.color = "red";
+      // function myfunction(){
+      //   title.style.color = "red";
         
-      }
-      addCart.addEventListener("click",myfunction);
+      // }
+      // addCart.addEventListener("click",myfunction);
       
-     
+      let gab = document.querySelectorAll('.title')
+gab[1].style.color = '#dc143c'
+
+//9b
+let btn = document.querySelectorAll('.add-to-cart')
+
+btn[0].addEventListener('click',fun3) 
+
+function fun3(){
+    btn[0].style.backgroundColor = '#dc143c'
+
+}
+
     </script>
   </body>
 </html>
