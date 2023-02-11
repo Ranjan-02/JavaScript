@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul">
+        <li id="demo" class="demo">prototype</li>
+        <li class="demo">artical</li>
+        <li class="demo">object</li>
+        <div class="demo" name="hii">hellow world</div>
+        <li class="demo">learn more</li>
+        <li class="demo">pricing</li>
+    </ul>
+    <script>
+        let selectId = document.querySelectorAll(".demo");
+        console.log(selectId);
+        let flex = document.querySelector(".ul");
+        flex.style.display = "flex";
+        flex.style.gap = "20px";
+       
+        for (let i = 0; i < selectId.length; i++) {
+            selectId[i].style.color = "red";
+            selectId[i].style.listStyle = "none";
+        
+        }
+
+    </script>
+</body>
+
+</html>
