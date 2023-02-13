@@ -1,0 +1,7 @@
+let now = new Date();
+console.log(now.toISOString().replace('T',' '));
+console.log(now.toLocaleString());
+console.log(now.toLocaleString().replace('/','-').replace('/','-'));
+
+
+
