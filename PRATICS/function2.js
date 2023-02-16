@@ -75,3 +75,13 @@ let name1 = "depesh";
 let book1 = "history";
 let book2 = "Bengali"           //function argument provied not only string value use Such  variable 
 BestBook(name1,book1,book2);    //like name1,book1,book2 are variable                      
+
+
+// ==============================Function Return===========================
+
+function sum(number1,number2){
+    let sum = number1+number2;
+    return sum;
+}
+let storeSum = (3,5);
+console.log(storeSum);
