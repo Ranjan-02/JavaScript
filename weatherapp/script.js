@@ -19,7 +19,7 @@ const getData = async (event)=>{
 
     const city = inputBox.value;
 
-    const featchData =await fetch (`http://api.weatherapi.com/v1/current.json?key=ba6686c4f4044b98acc133944231102&q=${city}`);
+    const featchData =await fetch (`https://api.weatherapi.com/v1/current.json?key=ba6686c4f4044b98acc133944231102&q=${city}`);
     
     const orgData =await featchData.json();
 
