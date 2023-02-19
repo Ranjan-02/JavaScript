@@ -8,6 +8,8 @@ const windSpeed = document.getElementById("windSpeed");
 const tempature = document.getElementById("temprature");
 const logoImg = document.getElementById("logoImage");
 const weatherStatus = document.getElementById("weatherStatus");
+const weatherReport = document.getElementById("weatherReport");
+
 
 
 const getData = async (event)=>{
@@ -34,6 +36,8 @@ const getData = async (event)=>{
     windSpeed.innerHTML = data.current.wind_mph;
     tempature.innerHTML= data.current.temp_c;
     logoImg.src = data.current.condition.icon;
+    weatherReport.innerHTML = data.current.condition.text;
+
 
     
     

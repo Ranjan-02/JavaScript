@@ -7,6 +7,8 @@
   }
   
   body {
+    background-image: url(./image/Peaceful_fluffy_clouds_sunny_afternoon_Background_bird_song_ambient_1080p_Full_HD.gif);
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,10 +18,10 @@
   
   /* designing the weather app container */
   .container {
-    background-image: url(./image/Peaceful_fluffy_clouds_sunny_afternoon_Background_bird_song_ambient_1080p_Full_HD.gif);
+    /* background-image: url(./image/Peaceful_fluffy_clouds_sunny_afternoon_Background_bird_song_ambient_1080p_Full_HD.gif); */
     background-size: cover;
-    width: 600px;
-    border: 2px solid black;
+    width: 800px;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
