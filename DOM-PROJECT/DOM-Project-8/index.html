@@ -61,7 +61,7 @@
         <div class="col-lg-8">
           <img
             class="desk-image"
-            src="images/image-web-3-desktop.jpg"
+            src="./Assats/image-web-3-desktop.jpg"
             alt="desk-img"
           />
           <div class="row second-row">
@@ -101,7 +101,7 @@
         <div class="col-lg-4">
           <img
             class="last-row-img"
-            src="images/image-retro-pcs.jpg"
+            src="./Assats/image-retro-pcs.jpg"
             alt="retro-img"
           />
           <h1 class="last-row-h1">01</h1>
@@ -113,7 +113,7 @@
         <div class="col-lg-4">
           <img
             class="last-row-img"
-            src="images/image-top-laptops.jpg"
+            src="./Assats/image-top-laptops.jpg"
             alt="laptop-img"
           />
           <h1 class="last-row-h1">02</h1>
@@ -125,7 +125,7 @@
         <div class="col-lg-4">
           <img
             class="last-row-img"
-            src="images/image-gaming-growth.jpg"
+            src="./Assats/image-gaming-growth.jpg"
             alt="growth-img"
           />
           <h1 class="last-row-h1">03</h1>
@@ -136,5 +136,55 @@
         </div>
       </section>
     </main>
+    <script>
+      //8a
+scroll = document.querySelector('.col-lg-4');
+scroll.style.overflow = 'scroll';
+
+
+//8b
+document.body.style.background = 'none'
+
+//8c
+let dropdown = document.querySelector('.navbar-nav')
+console.log(dropdown);
+dropdown.style.display = 'none'
+dropdown.style.position = 'relative'
+dropdown.style.left = '50px'
+dropdown.style.paddingTop = '150px'
+
+
+let btn3 = document.createElement('div')
+let btn5 = document.querySelector('.navbar')
+let img = document.createElement('img')
+img.style.border = '1px solid #737373'
+img.style.borderRadius = '6px'
+img.style.padding = '2px 6px 2px 6px'
+
+btn3.appendChild(img)
+
+
+img.src = "https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png";
+btn5.appendChild(btn3)
+
+img.addEventListener('click',fun2)
+let w = document.querySelector('.navbar-brand')
+
+
+function fun2(){
+    img.style.border ='3px solid #737373'
+    if (dropdown.style.display == 'block') {
+        dropdown.style.display = 'none'
+        
+    }
+    else{
+        dropdown.style.display = 'block'
+        w.style.position = 'relative'
+        w.style.bottom = '40px'
+        img.style.position = 'relative'
+        img.style.bottom = '40px'
+    } 
+}
+    </script>
   </body>
 </html>
