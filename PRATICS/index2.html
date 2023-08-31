@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        color: w;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="">
+        <input type="text" id="input" />
+        <button id="button">Submit</button>
+      </label>
+    </form>
+    <script>
+      const button = document.getElementById("button");
+      const input = document.getElementById("input");
+      console.log(input);
+      console.log(button);
+      button.style.backgroundColor = "green";
+      button.style.color = "white";
+      button.style.padding = "10px 20px";
+      button.style.border = "none";
+      button.style.borderRadius = "10px";
+      input.style.height = "40px";
+
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
