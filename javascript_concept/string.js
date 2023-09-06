@@ -1,33 +1,34 @@
-// let userputBoolean = undefined;
-// console.log(typeof userputBoolean);
+//  String Mathod
 
-// let ConversionBoolean = Boolean(userputBoolean)
-// console.log(`datatype ====>${typeof ConversionBoolean}; value ====>${ConversionBoolean}`);
+let myName = new String("Ranjan Maji");
+console.log(myName.__proto__);
+
+// console.log(myName.charAt(myName.length - 1));
+
+// return inddutual carectar by index no
+const myString = "ranjan";
+
+console.log(myString.blink());
+//  <blink>ranjan</blink> 
+console.log(myString.big());
+//  <big>ranjan</big>
+console.log(myString.bold());
+// <b>ranjan</b>
+
+// charAt Mathod
+
+let alfhabate = "ABCDEFGHIJ";
+let index = alfhabate.length - 1;
+console.log(alfhabate.charAt(index));
+
+// concate
+
+let myFirstName = "Iron";
+let lastName = " Man";
+let getNewString = (myFirstName.concat(lastName));//Return a new string
+// Iron Man
+
+let usingSplit = "ironman"
+// console.log((usingSplit.split()));
 
 
-
-// console.log(typeof 0 >= typeof null);
-
-// console.log(0 >= null);
-// console.log(0 > null);
-// console.log(0 == null);
-
-// non-primitive type
-
-let obj = {
-    name: "hitesh choudhuri",
-    age: 34,
-    isLogedIn: false
-}
-console.log(typeof obj);//output :- datatype--object
-
-let superHero = ["ironman", "saktiman", "thor", "hela"]
-console.log(typeof superHero);//output :- datatype--object
-
-let myAttitude = function () {
-    console.log("do not distrub");
-}
-console.log(typeof myAttitude); //output :- datatype--function(object function)
-
-let userValue = null;
-console.log(typeof userValue);//output :- datatype--object
