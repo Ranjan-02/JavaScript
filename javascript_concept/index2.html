@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click me</button>
+
+    <script>
+        const btn = document.querySelector("#btn");
+
+        var chake = false;
+
+        if (chake == true) {
+            btn.addEventListener("click", function () {
+                console.log('btn chack');
+                chake = false;
+            })
+        } else {
+            btn.addEventListener("click", function () {
+                console.log('btn not chack');
+                chake = true;
+            })
+        }
+
+    </script>
+</body>
+
+</html>
