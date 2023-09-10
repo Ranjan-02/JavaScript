@@ -42,7 +42,7 @@
 
         .flex {
             text-align: center;
-            margin-top: 30px;
+
         }
 
         button {
@@ -61,6 +61,27 @@
         button:hover {
             background: #12680a;
         }
+
+        .status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* box-shadow: 0px 0px 10px black; */
+            height: fit-content;
+
+        }
+
+        .img-div {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .img-div img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
     </style>
 </head>
 
@@ -70,7 +91,13 @@
         <img src="https://freeiconshop.com/wp-content/uploads/edd/image-solid.png" />
         <div class="flex">
             <h3>You not his Friend List😒</h3>
-            <button>Add Friend</button>
+            <div class="status">
+                <div class="img-div">
+                    <img src="https://images.unsplash.com/photo-1596117260969-74a7306aa7db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1580&q=80
+                    " alt="">
+                </div>
+                <button>Add Friend</button>
+            </div>
 
 
         </div>
@@ -78,24 +105,29 @@
     </div>
     <script defer>
         const img = document.querySelector("img")
-        console.log(img.attributes[0]);
         const content = document.querySelector("h3")
         const btn = document.querySelector("button")
+        const smallImg = document.querySelector(".img-div img")
+        console.log(smallImg);
         let Chaking = true;
         btn.addEventListener("click", function () {
             if (Chaking === true) {
                 content.innerHTML = "You Add Friend List😍"
                 btn.style.backgroundColor = `Red`
                 btn.innerHTML = "Remove Friend"
-                img.attributes[0] = `https://images.unsplash.com/photo-1548445474-e4886e0ea461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJlYXV0eWZ1bCUyMHdvbWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60`
-                console.log('thats good ');
+
+                img.src = `https://images.unsplash.com/photo-1596117260969-74a7306aa7db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1580&q=80`
+                smallImg.src = `https://images.unsplash.com/photo-1596117260969-74a7306aa7db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1580&q=80`
 
                 Chaking = false;
             } else {
+                alert("you sure")
                 content.innerHTML = "You not his Friend List😒"
                 btn.style.backgroundColor = `green`
                 btn.innerHTML = "Add Friend"
-                console.log('bad');
+                img.src = `https://freeiconshop.com/wp-content/uploads/edd/image-solid.png`
+
+                smallImg.src = `https://freeiconshop.com/wp-content/uploads/edd/image-solid.png`
                 Chaking = true;
             }
         })
