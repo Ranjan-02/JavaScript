@@ -1,36 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+  font-family: 'Poppins', sans-serif;
+
 }
+
 body {
-  font-family: sans-serif;
+  position: relative;
+  background: #000;
 }
-nav {
-  height: 80px;
-  width: 100%;
-  background-color: #34495e;
+
+.left-side {
+  height: 100vh;
+  width: 20%;
+  background: #04799f;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vh;
+  transform: translate(-100%);
+  transition: transform 0.3s linear 0s;
+
 }
-.logo {
+
+.show-slider2 {
+  transform: translate(0%) !important;
+}
+
+.left-side .logo {
   font-size: 35px;
-  font-weight: bold;
-  color: white;
-  padding: 0 100px;
-  line-height: 80px;
 }
-nav ul {
-  float: right;
-  margin: 0 40px;
+
+.left-side .logo h1 {
+  color: #000;
+  padding-bottom: 5vh;
 }
-nav li {
-  display: inline-block;
-  margin: 0 8px;
-  line-height: 80px;
+
+.link {
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+
 }
-nav a {
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
+
+
+.social i {
+
+  margin-right: 3vh;
+  padding: 4vh 0;
+  font-size: 40px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: ease all 0.2s;
+
+
+
+}
+
+.social i:hover {
+  transform: scale(1.2);
+}
+
+.link a {
+
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: ease all 0.2s;
+
+
+
+
+}
+
+.link a:hover {
+  transform: scale(1.1);
+
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 4vh;
+
+}
+
+.right-side i {
+  font-size: 25px;
+  color: wheat;
+  cursor: pointer;
+  transition: ease all 0.3s;
+
+}
+
+.right-side i:hover {
+  transform: scale(1.2);
+}
+
+main {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+
+main h1 {
+  color: wheat;
+  color: #585656;
+  font-weight: 900;
+}
+
+.web,
+.dev {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 90px;
+
+
+}
+
+.dev {
+  margin-left: 10vh;
+}
+
+.cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
 }
