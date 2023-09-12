@@ -1,8 +1,9 @@
 const bar = document.querySelector(".right-side i");
 const sidebar = document.querySelector(".left-side");
-// const cursor = document.querySelector(".cursor")
+const cursor = document.querySelector(".cursor i")
+const body = document.querySelector("body")
 
-console.log(cursor);
+
 
 
 let chack = true;
@@ -19,3 +20,8 @@ bar.addEventListener("click", function () {
     sidebar.classList.toggle("show-slider2")
 })
 
+body.addEventListener("mousemove", function (details) {
+    cursor.style.left = `${details.x - 60}px`
+    cursor.style.top = `${details.y}px`
+
+})
