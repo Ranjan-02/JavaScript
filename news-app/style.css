@@ -125,6 +125,7 @@ main {
 
 .card-contenent {
     padding: 12px;
+    overflow: hidden;
 }
 
 .card-title {
