@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>News App</title>
+</head>
+
+<body>
+    <!-- navbar devided in three part  -->
+    <nav>
+        <div class="main-div contenar flex">
+            <div class="logoBox">
+                <h1>News App</h1>
+            </div>
+
+            <div class="centerOfNav">
+                <ul class="navList">
+                    <li><a href="#">IPL</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Analogy</a></li>
+                </ul>
+            </div>
+
+            <div class="rightofNav flex ">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <main>
+        <div class="card-contenar contenar flex">
+        </div>
+    </main>
+
+    <template id="tamplate-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://placehold.co/400x200" alt="news related img">
+            </div>
+            <div class="card-contenent">
+                <h3>this is the title </h3>
+                <h6 class="card-title">End Guged 26/09/23</h6>
+                <p class="news-docs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ducimus,
+                    debitis, saepe nisi ut porro amet ratione quae temporibus eos hic perspiciatis, perferendis
+                    molestiae ipsam sunt itaque aut? Eligendi, consectetur.</p>
+            </div>
+        </div>
+    </template>
+
+
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
