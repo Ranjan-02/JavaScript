@@ -2,6 +2,7 @@ const APIKEY = "2807ee8616c04f17bed6686b59faf4e5"
 const URL = "https://newsapi.org/v2/everything?q="
 
 window.addEventListener("load", function () {
+
     fetchNews("today");
 });
 
@@ -47,9 +48,19 @@ function findDataInCard(cardClone, artical) {
 
 }
 
-document.querySelector(".btn-enter").addEventListener("enter", function () {
+document.querySelector(".btn-enter").addEventListener("click", function () {
     let userInput = document.querySelector(".user-input").value;
-    fetchNews(userInput);
-    userInput = "";
+    let chack;
+    if (userInput) {
+        fetchNews(userInput);
+        console.log('hellow');
+        chack = false;
+
+    } else {
+        alert("please enter input")
+        chack = true;
+
+    }
+
 
 })

@@ -1,84 +1,64 @@
-/* css reset */
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-image: url(./image/Peaceful_fluffy_clouds_sunny_afternoon_Background_bird_song_ambient_1080p_Full_HD.gif);
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-  }
-  
-  /* designing the weather app container */
-  .container {
-    /* background-image: url(./image/Peaceful_fluffy_clouds_sunny_afternoon_Background_bird_song_ambient_1080p_Full_HD.gif); */
-    background-size: cover;
-    width: 800px;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    padding: 15px;
-  }
-  
-  /* designing the search area */
-  .searchData {
-    border: 1px solid black;
-  }
-  
-  .searchData input {
-    border: transparent;
-    padding: 5px;
-  }
-  
-  .searchData button {
-    border: transparent;
-    padding: 5px 15px;
-    cursor: pointer;
-  }
-  
-  /* designing the city weather data */
-  .cityWeatherData {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .details {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .card {
-    
-    border-radius: 20px;
-    background-color:#ffffff73;
-    padding: 20px;
-    color: black;
-    font-weight: 800;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0px 5px 5px black;
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
-  }
-  #logoImage{
-    height: 50px ;
-    width: 50px;
-  }
- 
-  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mooli', sans-serif;
+}
+
+body {
+  background: #686464;
+  color: wheat;
+
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.contenar {
+  max-width: 1180px;
+  margin: auto;
+
+
+}
+
+.nav-header {
+  justify-content: space-between;
+  padding: 10px 30px;
+  width: 100%;
+  box-shadow: 0 0 10px #d3c8c8;
+}
+
+
+
+.top-div {
+  height: 170px;
+  width: 250px;
+  background: lightcoral;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.forcust {
+  width: 250px;
+  height: 400px;
+  background: lightblue;
+  border-radius: 10px;
+
+}
+
+.right-side {
+  width: 70%;
+  background: lightgreen;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.right-div {
+  position: relative;
+}
