@@ -22,3 +22,8 @@ javaScript Accrodion Project:-[Source Code](https://github.com/Ranjan-02/JavaScr
 ![ Display Like project](./Assats/add_and_remove_friend.png" Display Like project")
 
  Display Like project:-[Source Code](https://github.com/Ranjan-02/JavaScript/tree/main/display-like " Display Like project")
+
+## Weather App project
+![ Display Like project](./Assats/add_and_remove_friend.png" Display Like project")
+
+ Display Like project:-[Source Code](https://github.com/Ranjan-02/JavaScript/tree/main/display-like " Display Like project")
