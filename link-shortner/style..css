@@ -38,8 +38,9 @@ input {
 
 button {
     background: #3c95e9;
-    color: wheat;
+    color: rgb(219, 214, 203);
     border: none;
+    cursor: pointer;
 
 }
 
@@ -48,7 +49,9 @@ button:active {
 }
 
 input {
-    background: wheat;
+    color: rgb(219, 214, 203);
+    background: #0d6c92;
+    outline: none;
 }
 
 .linkdiv {
