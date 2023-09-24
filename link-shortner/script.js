@@ -1,20 +1,30 @@
 const linkInput = document.querySelector(".linkdiv input");
 const btnEnter = document.querySelector(".linkdiv button");
-const copyInput = document.querySelector(".linkdiv input");
-const copyBtn = document.querySelector(".linkdiv button");
+const copyInput = document.querySelector(".copy input");
+const copyBtn = document.querySelector(".copy button");
 
 
-btnEnter.addEventListener("click", inputLinkSubmit)
 
-function inputLinkSubmit(value) {
+btnEnter.addEventListener("click", fetchLinkShortner)
+
+
+async function fetchLinkShortner() {
+
     let value = linkInput.value;
+    console.log(value);
 
-    fetchLinkShortner(value)
-
-}
-
-async function fetchLinkShortner(value) {
-    let data = await fetch(`https://api.shrtco.de/v2/shorten?${value}/very/long/link.html`)
+    let data = await fetch(`https://api.shrtco.de/v2/shorten?url=${value}`)
     data = await data.json()
-    console.log(data);
+    console.log(data.result);
+    copyInput.value = data.result.short_link;
+
+
+    copyBtn.addEventListener("click", function () {
+        copyInput.select()
+        navigator.clipboard.writeText(copyInput.value)
+
+        console.log('select btn');
+    })
+
+
 }
