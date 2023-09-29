@@ -5,7 +5,6 @@ const copyBtn = document.querySelector(".copy button");
 
 btnEnter.addEventListener("click", function () {
     if (!linkInput.value) {
-
         return
     }
     fetchLinkShortner(linkInput.value)
@@ -20,5 +19,9 @@ async function fetchLinkShortner(value) {
 copyBtn.addEventListener("click", function () {
     copyInput.select()
     navigator.clipboard.writeText(copyInput.value)
+    document.getElementById("copy").style.opacity = "1"
+    // document.getElementById("myDIV").style.opacity = "0.5";
+    document.getElementById("copy").style.transition = "2s ease in out";
+
 
 })
