@@ -12,7 +12,7 @@ body {
 }
 
 .contenar {
-    min-width: 90vh;
+    width: 90vmin;
     background-color: #fff;
     padding: 50px 30px;
     position: absolute;
@@ -42,8 +42,15 @@ button {
     color: #020929;
 }
 
+.input-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 #test-input {
     padding: 20px;
     border: 1px solid black;
     height: 50vh;
+    margin-top: 10px;
 }
