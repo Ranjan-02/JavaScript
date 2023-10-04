@@ -35,11 +35,8 @@ html {
 
 .star-icon {
     display: flex;
-    column-gap: 7px;
-}
-
-.star-icon li {
-    list-style: none;
+    column-gap: 13px;
+    margin: 10px 0px;
 }
 
 
@@ -62,15 +59,27 @@ button {
     border-radius: 8px;
     margin-bottom: 20px;
     background-color: #e4f35f;
+    cursor: pointer;
 
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+.fa-star.active {
+    color: rgb(207, 6, 6)
 }
 
 button:active {
     background-color: #ffffff;
 }
 
-.star-icon li i {
-    color: #fffb05;
+
+
+
+li {
+    list-style: none;
 }
 
 p {
