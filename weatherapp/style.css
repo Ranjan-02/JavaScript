@@ -1,60 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Mooli', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
 }
-
-body {
-  background: #686464;
-  color: wheat;
-
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.contenar {
-  max-width: 1180px;
-  margin: auto;
-
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .75),rgba(0, 0, 0, .75)), url(./assats/sunny-day-when-sharks-attack.gif);
+    background-size: 100% 100%;
+    position: relative;
 
 }
-
-.nav-header {
-  justify-content: space-between;
-  padding: 10px 30px;
-  width: 100%;
-  box-shadow: 0 0 10px #d3c8c8;
+.logo{
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    display: inline-block;
 }
-
-
-
-.top-div {
-  height: 170px;
-  width: 250px;
-  background: lightcoral;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.forcust {
-  width: 250px;
-  height: 400px;
-  background: lightblue;
-  border-radius: 10px;
+.logo p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000be;
 
 }
+.logo span{
+    color: #ff000056;
+}
+.date-time{
+    color: #ffffff;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    
+}
+.date-time > div{
+    /* border: 1px solid wheat; */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1));
+}
+#day{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-.right-side {
-  width: 70%;
-  background: lightgreen;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+}
+#time{
+    font-size: 40px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    
+}
+#time span{
+    font-size: 20px;
+}
+.temparature{
+    font-size: 50px;
+
+}
+#weather{
+    font-size: 30px;
+    font-weight: 700;
+}
+#place{
+    font-size: 35px;
 }
