@@ -5,23 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add font Asawm CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Weather App (for educational perpase)</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="logo">
-        <p>Weather <span>App</span> </p>
-    </div>
-    <div class="date-time">
-        <p id="day">Today</p>
-        <p id="time">04:40 <span>pm</span> </p>
-        <div>
-            <p class="temparature">42 <sup>o</sup>C</p>
-            <p id="weather">haza</p>
-            <p id="place">Purulia | West-Bengal</p>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <p>Weather<span>App</span></p>
+            </div>
+            <div class="nav-right">
+                <input type="text" placeholder="Location...">
+                <button>Search</button>
+            </div>
         </div>
-    </div>
+    </nav>
+    <main>
+        <div>
+            <div class="today">
+                <p id="day">Today</p>
+                <p id="time">04:40 <span>pm</span> </p>
+                <div>
+                    <div class="temparature-div">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                        <p class="temparature">42 <sup>o</sup>C</p>
+                    </div>
+                    <p id="weather">haza</p>
+                    <p id="place">Purulia | West-Bengal</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
     <div class="contenar">
         <div></div>
         <div></div>
