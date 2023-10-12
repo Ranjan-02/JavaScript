@@ -12,7 +12,9 @@ body {
     color: white;
 }
 
-
+:root {
+    --mainColor: #5d992d;
+}
 
 .navbar {
     display: flex;
@@ -40,32 +42,52 @@ ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.18rem;
-    margin-inline: 22px;
+    margin-inline: 18px;
     transition: all ease-in-out 0.3s;
+    padding: 6px;
+
+
 }
 
 ul li a:hover {
-    color: #2e70ff;
-    border-bottom: 2px solid #437fff;
+    color: var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 
-ul li a:active {
-    color: #2e70ff;
-    border-bottom: 2px solid #437fff;
+.active {
+    background-color: var(--mainColor);
+    padding: 6px;
 }
 
 #bar {
     display: none;
 }
 
-.logo {
-    font-size: 22px;
+
+.logo h1 {
+    display: block;
+    margin: 8px 5px;
+    border: 2px solid #ffffff;
+
+
 }
 
-.logo span {
-    color: #1344af;
-    font-weight: 900;
+.logo h1 span {
+
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #2e2d2d;
+    font-size: 1.18rem;
 }
+
+.logo h1 .web {
+    background-color: var(--mainColor);
+}
+
+.logo h1 .devloper {
+    background-color: #3b3a3a;
+}
+
 
 .main {
     padding-top: 30px;
@@ -90,29 +112,32 @@ ul li a:active {
 }
 
 .main-text h1 span {
-    color: #1344af;
+    color: var(--mainColor);
 }
 
 .main-text p {
     font-size: 1.25rem;
+    margin-bottom: 20px;
 }
 
 .cvBtn {
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px 12px;
     color: #ffffff;
-    background-color: #1344af;
+    background-color: var(--mainColor);
     border: none;
     border-radius: 10px 0 10px 0;
     transition: all ease-in-out 0.3s;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1.5px;
+    text-decoration: none;
+
 
 }
 
 .cvBtn:hover {
-    color: #1344af;
+    color: var(--mainColor);
     background-color: #fff;
     cursor: pointer;
 }
@@ -127,7 +152,7 @@ ul li a:active {
 }
 
 .head h1 span {
-    color: #1344af;
+    color: var(--mainColor);
 }
 
 .aboutUs {
@@ -149,7 +174,7 @@ ul li a:active {
 .about img {
     height: 300px;
     border-radius: 50%;
-    border: 4px solid #147aff;
+    border: 4px solid var(--mainColor);
 }
 
 .aboutText p {
@@ -158,11 +183,11 @@ ul li a:active {
 }
 
 .aboutText h2 span {
-    color: #3877ff;
+    color: var(--mainColor);
 }
 
 .aboutText p span {
-    color: #147aff;
+    color: var(--mainColor);
 }
 
 .services {
@@ -231,7 +256,7 @@ ul li a:active {
 .btn {
     padding: 7px;
     border-radius: 10px 0 10px 0;
-    background-color: #147aff;
+    background-color: var(--mainColor);
     color: white;
     border: none;
     cursor: pointer;
@@ -240,7 +265,7 @@ ul li a:active {
 
 
 .btn:hover {
-    color: #147aff;
+    color: var(--mainColor);
     background-color: #fff;
 
 }
@@ -264,15 +289,22 @@ ul li a:active {
     background-color: #494646;
 }
 
-.contact input {
+.contact input,
+#massage {
     width: 90%;
     padding: 5px;
     font-size: 17px;
     outline: none;
-    border: 1px solid #147aff;
+    border: 1px solid var(--mainColor);
     background-color: transparent;
     color: rgb(204, 204, 204);
     margin-top: 8px;
+}
+
+.validation {
+    font-size: 12px;
+    color: #47a0c4;
+    display: none;
 }
 
 .contact button {
@@ -304,8 +336,13 @@ ul li a:active {
     left: 2px;
     width: 50%;
     height: 4px;
-    background: #0f72ce;
+    background: var(--mainColor);
 }
+
+
+
+
+
 
 @media screen and (max-width:1000px) {
     .main {
@@ -349,6 +386,7 @@ ul li a:active {
 
 @media screen and (max-width:800px) {
 
+
     .workCard {
         width: 30%;
 
@@ -374,10 +412,24 @@ ul li a:active {
         display: none;
     }
 
+    .showData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 23px;
+        background-color: #afafafab;
+        position: fixed;
+        top: 75px;
+        right: 3%;
+        border-radius: 7px;
+        row-gap: 15px;
+    }
+
     #bar {
         display: block;
         font-size: 23px;
         margin-right: 10px;
+        cursor: pointer;
     }
 }
 
@@ -392,6 +444,7 @@ ul li a:active {
     .service,
     .myWork {
         flex-direction: column;
+
     }
 
     .card,
@@ -407,6 +460,8 @@ ul li a:active {
     .footer {
         flex-direction: column;
     }
+
+
 
 
 }

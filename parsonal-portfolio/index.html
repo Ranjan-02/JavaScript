@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         crossorigin="anonymous" />
@@ -11,14 +12,14 @@
 </head>
 
 <body>
-
     <nav>
         <div class="navbar">
             <div class="logo">
-                <h1>Devloper <span>X</span></h1>
+                <h1><span class="web">WEB</span> <span class="devloper">Devloper</span></h1>
+
             </div>
             <ul>
-                <li><a href="#main">Home</a></li>
+                <li><a href="#main" class="active">Home</a></li>
                 <li><a href="#aboutUs">About</a></li>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#work">My Work</a></li>
@@ -33,7 +34,7 @@
             <h3>Hellow I am</h3>
             <h1>Ranjan <span>Maji</span></h1>
             <p>Full Stack Deloper</p>
-            <button class="cvBtn">Downlod CV</button>
+            <a href="./image/final2.pdf" class="cvBtn" download="Ranjan CV">Downlod CV</a>
         </div>
         <img class="img" src="./image/22539-8-man-file.png" alt="img">
     </main>
@@ -85,27 +86,31 @@
         </div>
         <div class="myWork">
             <div class="workCard">
-                <img src="https://images.unsplash.com/photo-1502951682449-e5b93545d46e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80"
-                    alt="">
-                <p>Responsive Food Website</p>
-                <button class="btn"><a href="https://google.com"> Source Code</a></button>
+                <img src="./image/weather-app.png" alt="weather-app.png">
+
+                <p>Responsive weather-app Using API</p>
+                <button class="btn"><a href="https://github.com/Ranjan-02/JavaScript/tree/main/weatherapp"
+                        target="_blank"> Source
+                        Code</a></button>
 
             </div>
 
             <div class="workCard">
-                <img src="https://images.unsplash.com/photo-1502951682449-e5b93545d46e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80"
-                    alt="">
+                <img src="./image/news-app.png" alt="news-app.png">
                 <p>News Website Using API</p>
-                <button class="btn"><a href="https://google.com"> Source Code</a></button>
+                <button class="btn"><a href="https://github.com/Ranjan-02/JavaScript/tree/main/news-app"
+                        target="_blank"> Source
+                        Code</a></button>
 
 
             </div>
 
             <div class="workCard">
-                <img src="https://images.unsplash.com/photo-1502951682449-e5b93545d46e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80"
-                    alt="">
-                <p>Recipi App using API</p>
-                <button class="btn"><a href="https://google.com"> Source Code</a></button>
+                <img src="./image/Text-Editor-APP.png" alt="Text-Editor-APP">
+                <p>Responsive Text-Editor App </p>
+                <button class="btn"><a href="https://github.com/Ranjan-02/JavaScript/tree/main/text-editor"
+                        target="_blank"> Source
+                        Code</a></button>
             </div>
         </div>
     </main>
@@ -115,16 +120,16 @@
             <h1>Contact <span>Us</span></h1>
         </div>
         <div class="contact">
-            <p>Email:</p>
-            <input type="text" placeholder="Enter Email " id="email">
+            <p>Name:</p>
+            <input type="text" placeholder="Please Enter Name" id="name">
 
-            <p>password:</p>
-            <input type="text" placeholder="Enter Email " id="pass">
+            <p>Email:</p>
+            <input type="email" placeholder="Please Enter Email " id="email">
 
             <p>Massage:</p>
-            <input type="text" placeholder="Enter Email " id="massage">
-
-            <button class="btn">Submit</button>
+            <textarea id="massage" cols="5" rows="4" placeholder="Enter massage"></textarea>
+            <p class="validation">please fill all field</p>
+            <button class="btn" id="btn">Submit</button>
         </div>
     </main>
 
@@ -162,6 +167,8 @@
         </div>
     </footer>
     <script src="./script.js" defer></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
