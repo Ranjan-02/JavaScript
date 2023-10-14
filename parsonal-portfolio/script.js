@@ -67,3 +67,8 @@ contactBtn.addEventListener("click", function (e) {
 
 
 })
+
+let mode = document.querySelector(".fa-solid")
+mode.addEventListener("click", function () {
+    // 
+})

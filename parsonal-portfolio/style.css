@@ -8,20 +8,22 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1b1a1a;
+    background-color: var(--backGroundColor);
     color: white;
 }
 
 :root {
     --mainColor: #5d992d;
+    --backGroundColor: #1b1a1a;
+    --navbackgroundColor: #3b3a3a;
+    --textColor: #ffffff;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    background: #3b3a3a;
+    background: var(--navbackgroundColor);
     position: fixed;
     top: 0;
     width: 100%;
@@ -40,7 +42,7 @@ li {
 
 ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--textColor);
     font-size: 1.18rem;
     margin-inline: 18px;
     transition: all ease-in-out 0.3s;
@@ -67,7 +69,7 @@ ul li a:hover {
 .logo h1 {
     display: block;
     margin: 8px 5px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--textColor);
 
 
 }
@@ -76,7 +78,7 @@ ul li a:hover {
 
     display: inline-block;
     padding: 4px 8px;
-    background-color: #2e2d2d;
+    background-color: var(--textColor);
     font-size: 1.18rem;
 }
 
@@ -85,7 +87,7 @@ ul li a:hover {
 }
 
 .logo h1 .devloper {
-    background-color: #3b3a3a;
+    background-color: var(--navbackgroundColor);
 }
 
 
@@ -123,7 +125,7 @@ ul li a:hover {
 .cvBtn {
     margin-top: 30px;
     padding: 10px 12px;
-    color: #ffffff;
+    color: var(--textColor);
     background-color: var(--mainColor);
     border: none;
     border-radius: 10px 0 10px 0;
@@ -138,7 +140,7 @@ ul li a:hover {
 
 .cvBtn:hover {
     color: var(--mainColor);
-    background-color: #fff;
+    background-color: var(--backGroundColor);
     cursor: pointer;
 }
 
@@ -157,7 +159,7 @@ ul li a:hover {
 
 .aboutUs {
     padding: 30px;
-    background-color: #2b2929d0;
+    background-color: var(--navbackgroundColor);
 
 }
 
@@ -206,7 +208,7 @@ ul li a:hover {
 .card {
     width: 25%;
     padding: 22px;
-    background-color: #464545;
+    background-color: var(--navbackgroundColor);
     margin-inline: 20px;
     border-radius: 10px 0px 10px 0;
 }
@@ -226,7 +228,7 @@ ul li a:hover {
 
 .works {
     padding-top: 30px;
-    background-color: #2b2929d0;
+    background-color: var(--navbackgroundColor);
     padding-bottom: 100px;
 
 }
@@ -245,7 +247,7 @@ ul li a:hover {
     width: 300px;
     padding-bottom: 20px;
     margin-inline: 30px;
-    background-color: #3f3f3f;
+    background-color: var(--navbackgroundColor);
 }
 
 .workCard img {
@@ -257,7 +259,7 @@ ul li a:hover {
     padding: 7px;
     border-radius: 10px 0 10px 0;
     background-color: var(--mainColor);
-    color: white;
+    color: var(--navbackgroundColor);
     border: none;
     cursor: pointer;
     transition: all ease-in-out .4s;
@@ -266,7 +268,7 @@ ul li a:hover {
 
 .btn:hover {
     color: var(--mainColor);
-    background-color: #fff;
+    background-color: var(--textColor);
 
 }
 
@@ -286,7 +288,7 @@ ul li a:hover {
     width: 300px;
     padding: 20px;
     margin: auto;
-    background-color: #494646;
+    background-color: var(--navbackgroundColor);
 }
 
 .contact input,
@@ -297,7 +299,7 @@ ul li a:hover {
     outline: none;
     border: 1px solid var(--mainColor);
     background-color: transparent;
-    color: rgb(204, 204, 204);
+    color: var(--textColor);
     margin-top: 8px;
 }
 

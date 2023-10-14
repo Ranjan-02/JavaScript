@@ -21,7 +21,7 @@ copyBtn.addEventListener("click", function () {
     navigator.clipboard.writeText(copyInput.value)
     document.getElementById("copy").style.opacity = "1"
     // document.getElementById("myDIV").style.opacity = "0.5";
-    document.getElementById("copy").style.transition = "2s ease in out";
+    document.getElementById("copy").style.transition = "2s";
 
 
 })
