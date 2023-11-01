@@ -66,5 +66,18 @@ main h1 {
 }
 
 .data-contenar {
-    text-align: center;
+    text-align: left;
+}
+
+span {
+    color: #cfc7c7ef;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.discription {
+    margin-bottom: 10px;
 }
