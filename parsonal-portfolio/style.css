@@ -19,11 +19,21 @@ body {
     --textColor: #ffffff;
 }
 
+.lightMode {
+    --mainColor: #5d992d;
+    --backGroundColor: #1b1a1a;
+    --navbackgroundColor: #3b3a3a;
+    --textColor: #ffffff;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: var(--navbackgroundColor);
+    background-color: #424242fd;
+    -webkit-box-shadow: 1px 14px 26px -14px rgb(49, 49, 49);
+    -moz-box-shadow: 1px 14px 26px -14px rgb(54, 54, 54);
+    box-shadow: 1px 14px 26px -14px rgb(51, 50, 51);
     position: fixed;
     top: 0;
     width: 100%;
@@ -51,10 +61,7 @@ ul li a {
 
 }
 
-ul li a:hover {
-    color: var(--mainColor);
-    border-bottom: 2px solid var(--mainColor);
-}
+
 
 .active {
     background-color: var(--mainColor);
@@ -122,12 +129,12 @@ ul li a:hover {
     margin-bottom: 20px;
 }
 
-.cvBtn {
-    margin-top: 30px;
+.main-btn {
+    /* margin-top: 30px; */
     padding: 10px 12px;
     color: var(--textColor);
     background-color: var(--mainColor);
-    border: none;
+    border: 2px solid transparent;
     border-radius: 10px 0 10px 0;
     transition: all ease-in-out 0.3s;
     font-size: 1rem;
@@ -138,9 +145,10 @@ ul li a:hover {
 
 }
 
-.cvBtn:hover {
+.main-btn:hover {
     color: var(--mainColor);
-    background-color: var(--backGroundColor);
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
     cursor: pointer;
 }
 
@@ -246,8 +254,11 @@ ul li a:hover {
 .workCard {
     width: 300px;
     padding-bottom: 20px;
+    border-radius: 10px 0 10px 0;
     margin-inline: 30px;
     background-color: var(--navbackgroundColor);
+    border: 2px solid var(--mainColor);
+    padding: 10px;
 }
 
 .workCard img {
@@ -255,20 +266,11 @@ ul li a:hover {
     height: 200px;
 }
 
-.btn {
-    padding: 7px;
-    border-radius: 10px 0 10px 0;
-    background-color: var(--mainColor);
-    color: var(--navbackgroundColor);
-    border: none;
-    cursor: pointer;
-    transition: all ease-in-out .4s;
-}
-
-
-.btn:hover {
-    color: var(--mainColor);
-    background-color: var(--textColor);
+.workCard button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding: 0;
 
 }
 
@@ -278,6 +280,9 @@ ul li a:hover {
 
 .workCard p {
     margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .connect {
